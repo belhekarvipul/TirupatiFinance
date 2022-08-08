@@ -70,6 +70,24 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to सभासद सूचना.
+        /// </summary>
+        internal static string Customer_Information {
+            get {
+                return ResourceManager.GetString("Customer Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to दैनिक संग्रह.
+        /// </summary>
+        internal static string Daily_Collection {
+            get {
+                return ResourceManager.GetString("Daily Collection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to नवीन सभासद.
         /// </summary>
         internal static string New_Customer {

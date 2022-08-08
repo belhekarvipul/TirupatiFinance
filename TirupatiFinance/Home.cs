@@ -62,40 +62,11 @@ namespace TirupatiFinance
             newCustomerToolStripMenuItem.Text = Constants.resourceManager.GetString("New Customer");
             reportsToolStripMenuItem.Text = Constants.resourceManager.GetString("Reports");
             //dailyReportToolStripMenuItem.Text = Constants.resourceManager.GetString("Daily Report");
-        }
-
-        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (englishToolStripMenuItem.Checked)
-            {
-                marathiToolStripMenuItem.Checked = false;
-                hindiToolStripMenuItem.Checked = false;
-                Utility.SetLanguage(Constants.Language.English);
-
-                this.Refresh();
-            }
-        }
-
-        private void marathiToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (marathiToolStripMenuItem.Checked)
-            {
-                englishToolStripMenuItem.Checked = false;
-                hindiToolStripMenuItem.Checked = false;
-                Utility.SetLanguage(Constants.Language.Marathi);
-                this.Refresh();
-            }
+            customerInformationToolStripMenuItem.Text = Constants.resourceManager.GetString("Customer Information");
+            dailyCollectionToolStripMenuItem.Text = Constants.resourceManager.GetString("Daily Collection");
 
         }
 
-        private void hindiToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (hindiToolStripMenuItem.Checked)
-            {
-                marathiToolStripMenuItem.Checked = false;
-                englishToolStripMenuItem.Checked = false;
-                Utility.SetLanguage(Constants.Language.Hindi);
-            }
-        }
+       
     }
 }

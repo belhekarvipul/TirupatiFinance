@@ -120,6 +120,12 @@
   <data name="Customer" xml:space="preserve">
     <value>Customer</value>
   </data>
+  <data name="Customer Information" xml:space="preserve">
+    <value>Customer Information</value>
+  </data>
+  <data name="Daily Collection" xml:space="preserve">
+    <value>Daily Collection</value>
+  </data>
   <data name="New Customer" xml:space="preserve">
     <value>New Customer</value>
   </data>
