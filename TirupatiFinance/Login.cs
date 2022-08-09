@@ -29,7 +29,7 @@ namespace TirupatiFinance
             if (txtUserName.Text == "admin")
                 Constants.isSystemUser = true;
 
-            Utility.SetLanguage(Constants.Language.English);
+            Utility.SetLanguage(Constants.Language.Marathi);
 
             this.Hide();
 

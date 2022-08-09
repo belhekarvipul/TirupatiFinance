@@ -61,6 +61,15 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to पत्ता.
+        /// </summary>
+        internal static string Address {
+            get {
+                return ResourceManager.GetString("Address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to सभासद.
         /// </summary>
         internal static string Customer {

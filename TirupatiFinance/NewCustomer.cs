@@ -10,10 +10,16 @@ namespace TirupatiFinance
         {
             InitializeComponent();
             BindReturnType();
-            InitializeControls(false);
+            LocalizeForm();
         }
 
         #region PRIVATE
+        private void LocalizeForm()
+        {
+            lblCustomerInformation.Text = Constants.resourceManager.GetString("Customer Information");
+            lblAddress.Text = Constants.resourceManager.GetString("Address");
+        }
+
         private void BindReturnType()
         {
             ddlReturnType.Items.Clear();
@@ -23,12 +29,6 @@ namespace TirupatiFinance
             ddlReturnType.Items.Add(Constants.ReturnType.Monyhly);
             ddlReturnType.Items.Add(Constants.ReturnType.Yearly);
             ddlReturnType.SelectedIndex = 0;
-        }
-
-        private void InitializeControls(bool flag)
-        {
-            btnSave.Enabled = !flag;
-            btnDelete.Enabled = flag;
         }
 
         private void ResetControls()
@@ -67,16 +67,6 @@ namespace TirupatiFinance
             }
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (ValidateCustomer())
@@ -103,13 +93,13 @@ namespace TirupatiFinance
                 int CustomerId = db.AddCustomer(customer);
 
                 if (CustomerId > 0)
-                    MessageBox.Show("A new customer with Id - " + CustomerId + "has been added to the system.");
+                    MessageBox.Show("A new customer with Id - " + CustomerId + " has been added to the system.");
                 else
                     MessageBox.Show("Something went wrong! Try again after sometime or contact your administrator.");
             }
         }
 
-        private void btnNewCustomer_Click(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
             ResetControls();
         }
