@@ -38,13 +38,13 @@
             this.newCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dailyCollectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dailyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.dailyCollectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,8 +59,7 @@
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1533, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1725, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -73,27 +72,29 @@
             this.exitToolStripMenuItem});
             this.welcomeToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 30, 0);
             this.welcomeToolStripMenuItem.Name = "welcomeToolStripMenuItem";
-            this.welcomeToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
+            this.welcomeToolStripMenuItem.Size = new System.Drawing.Size(101, 29);
             this.welcomeToolStripMenuItem.Text = "Welcome";
             // 
             // myProfileToolStripMenuItem
             // 
             this.myProfileToolStripMenuItem.Name = "myProfileToolStripMenuItem";
-            this.myProfileToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
+            this.myProfileToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.myProfileToolStripMenuItem.Text = "My Profile";
             this.myProfileToolStripMenuItem.Click += new System.EventHandler(this.myProfileToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
+            this.logoutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.L)));
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
+            this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.E)));
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -104,7 +105,7 @@
             this.manageCustomerToolStripMenuItem,
             this.dailyCollectionToolStripMenuItem});
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
             this.customerToolStripMenuItem.Text = "Customer";
             this.customerToolStripMenuItem.ToolTipText = "Customer specific actions can be performed here";
             // 
@@ -112,7 +113,7 @@
             // 
             this.newCustomerToolStripMenuItem.Name = "newCustomerToolStripMenuItem";
             this.newCustomerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newCustomerToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.newCustomerToolStripMenuItem.Size = new System.Drawing.Size(295, 34);
             this.newCustomerToolStripMenuItem.Text = "New Customer";
             this.newCustomerToolStripMenuItem.ToolTipText = "Create a new customer";
             this.newCustomerToolStripMenuItem.Click += new System.EventHandler(this.newCustomerToolStripMenuItem_Click);
@@ -122,28 +123,34 @@
             this.manageCustomerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.customerInformationToolStripMenuItem});
             this.manageCustomerToolStripMenuItem.Name = "manageCustomerToolStripMenuItem";
-            this.manageCustomerToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.manageCustomerToolStripMenuItem.Size = new System.Drawing.Size(295, 34);
             this.manageCustomerToolStripMenuItem.Text = "Manage Customers";
             // 
             // customerInformationToolStripMenuItem
             // 
             this.customerInformationToolStripMenuItem.Name = "customerInformationToolStripMenuItem";
-            this.customerInformationToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
+            this.customerInformationToolStripMenuItem.Size = new System.Drawing.Size(290, 34);
             this.customerInformationToolStripMenuItem.Text = "Customer Information";
+            // 
+            // dailyCollectionToolStripMenuItem
+            // 
+            this.dailyCollectionToolStripMenuItem.Name = "dailyCollectionToolStripMenuItem";
+            this.dailyCollectionToolStripMenuItem.Size = new System.Drawing.Size(295, 34);
+            this.dailyCollectionToolStripMenuItem.Text = "Daily Collection ";
             // 
             // reportsToolStripMenuItem
             // 
             this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dailyReportToolStripMenuItem});
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(89, 29);
             this.reportsToolStripMenuItem.Text = "Reports";
             // 
             // dailyReportToolStripMenuItem
             // 
             this.dailyReportToolStripMenuItem.Name = "dailyReportToolStripMenuItem";
             this.dailyReportToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            this.dailyReportToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.dailyReportToolStripMenuItem.Size = new System.Drawing.Size(275, 34);
             this.dailyReportToolStripMenuItem.Text = "Daily Report";
             this.dailyReportToolStripMenuItem.Click += new System.EventHandler(this.dailyReportToolStripMenuItem_Click);
             // 
@@ -153,7 +160,7 @@
             this.addNewUserToolStripMenuItem,
             this.manageUsersToolStripMenuItem});
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(81, 29);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Visible = false;
             // 
@@ -161,14 +168,14 @@
             // 
             this.addNewUserToolStripMenuItem.Name = "addNewUserToolStripMenuItem";
             this.addNewUserToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
-            this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
+            this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.addNewUserToolStripMenuItem.Text = "Add New User";
             this.addNewUserToolStripMenuItem.Click += new System.EventHandler(this.addNewUserToolStripMenuItem_Click);
             // 
             // manageUsersToolStripMenuItem
             // 
             this.manageUsersToolStripMenuItem.Name = "manageUsersToolStripMenuItem";
-            this.manageUsersToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
+            this.manageUsersToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.manageUsersToolStripMenuItem.Text = "Manage Users";
             // 
             // contextMenuStrip1
@@ -177,17 +184,11 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // dailyCollectionToolStripMenuItem
-            // 
-            this.dailyCollectionToolStripMenuItem.Name = "dailyCollectionToolStripMenuItem";
-            this.dailyCollectionToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
-            this.dailyCollectionToolStripMenuItem.Text = "Daily Collection ";
-            // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1533, 489);
+            this.ClientSize = new System.Drawing.Size(1725, 611);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;

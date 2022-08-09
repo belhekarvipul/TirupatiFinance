@@ -31,7 +31,9 @@ namespace TirupatiFinance
 
         private void newCustomerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This functionality is not yet implemented.");
+            NewCustomer newCustomer = new NewCustomer();
+            newCustomer.Text = Constants.ApplicationName + " : New Customer";
+            newCustomer.ShowDialog();            
         }
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)

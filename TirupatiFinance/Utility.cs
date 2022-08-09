@@ -2,11 +2,19 @@
 using System.Text;
 using System.Globalization;
 using System.Resources;
+using log4net;
+using log4net.Config;
 
 namespace TirupatiFinance
 {
     public static class Utility
     {
+        static Utility() {
+            XmlConfigurator.Configure();
+        }
+        
+        public static readonly ILog log = LogManager.GetLogger(typeof(Utility));
+
         public static string Encrypt(string input, string key)
         {
             var inputBytes = Encoding.UTF8.GetBytes(input);

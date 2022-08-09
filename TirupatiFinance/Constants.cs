@@ -19,5 +19,13 @@ namespace TirupatiFinance
             Marathi,
             Hindi
         };
+
+        public enum ReturnType
+        {
+            Daily,
+            Weekly,
+            Monyhly,
+            Yearly
+        };
     }
 }

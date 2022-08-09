@@ -23,7 +23,7 @@ namespace TirupatiFinance
         {
             //if (txtUserName.Text == "a" && txtPassword.Text == "a")
             //{
-            MessageBox.Show("Your encrypted password is : " + Utility.Encrypt(txtUserName.Text, Constants.ApplicationName));
+            //MessageBox.Show("Your encrypted password is : " + Utility.Encrypt(txtUserName.Text, Constants.ApplicationName));
 
             Constants.UserName = txtUserName.Text;
             if (txtUserName.Text == "admin")
