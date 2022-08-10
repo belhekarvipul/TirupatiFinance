@@ -120,19 +120,64 @@
   <data name="Address" xml:space="preserve">
     <value>Address</value>
   </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Contact 1" xml:space="preserve">
+    <value>Contact 1</value>
+  </data>
+  <data name="Contact 2" xml:space="preserve">
+    <value>Contact 2</value>
+  </data>
   <data name="Customer" xml:space="preserve">
     <value>Customer</value>
   </data>
   <data name="Customer Information" xml:space="preserve">
     <value>Customer Information</value>
   </data>
+  <data name="Customer Mobile" xml:space="preserve">
+    <value>Customer Mobile</value>
+  </data>
+  <data name="Customer Name" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
   <data name="Daily Collection" xml:space="preserve">
     <value>Daily Collection</value>
+  </data>
+  <data name="Guarantor Information" xml:space="preserve">
+    <value>Guarantor Information</value>
+  </data>
+  <data name="Guarantor Name 1" xml:space="preserve">
+    <value>Guarantor Name 1</value>
+  </data>
+  <data name="Guarantor Name 2" xml:space="preserve">
+    <value>Guarantor Name 2</value>
+  </data>
+  <data name="Installment Amount" xml:space="preserve">
+    <value>Installment Amount</value>
+  </data>
+  <data name="Loan Completion Date" xml:space="preserve">
+    <value>Loan Completion Date</value>
+  </data>
+  <data name="Loan Taken Date" xml:space="preserve">
+    <value>Loan Taken Date</value>
   </data>
   <data name="New Customer" xml:space="preserve">
     <value>New Customer</value>
   </data>
   <data name="Reports" xml:space="preserve">
     <value>Reports</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Total Duration" xml:space="preserve">
+    <value>Total Duration</value>
+  </data>
+  <data name="Total Loan Amount" xml:space="preserve">
+    <value>Total Loan Amount</value>
   </data>
 </root>

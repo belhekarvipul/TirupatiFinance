@@ -61,6 +61,51 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to पत्ता.
+        /// </summary>
+        internal static string Address {
+            get {
+                return ResourceManager.GetString("Address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to बाहेर जा.
+        /// </summary>
+        internal static string Close {
+            get {
+                return ResourceManager.GetString("Close", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to संपर्क.
+        /// </summary>
+        internal static string Contact {
+            get {
+                return ResourceManager.GetString("Contact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to संपर्क 1.
+        /// </summary>
+        internal static string Contact_1 {
+            get {
+                return ResourceManager.GetString("Contact 1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to संपर्क 2.
+        /// </summary>
+        internal static string Contact_2 {
+            get {
+                return ResourceManager.GetString("Contact 2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to सभासद.
         /// </summary>
         internal static string Customer {
@@ -70,11 +115,29 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to सभासद सूचना.
+        ///   Looks up a localized string similar to सभासद माहिती.
         /// </summary>
         internal static string Customer_Information {
             get {
                 return ResourceManager.GetString("Customer Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to सभासद क्रमांक.
+        /// </summary>
+        internal static string Customer_Mobile {
+            get {
+                return ResourceManager.GetString("Customer Mobile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to सभासद नाव.
+        /// </summary>
+        internal static string Customer_Name {
+            get {
+                return ResourceManager.GetString("Customer Name", resourceCulture);
             }
         }
         
@@ -84,6 +147,60 @@ namespace TirupatiFinance.Resource {
         internal static string Daily_Collection {
             get {
                 return ResourceManager.GetString("Daily Collection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to गॅरेंटर माहिती.
+        /// </summary>
+        internal static string Guarantor_Information {
+            get {
+                return ResourceManager.GetString("Guarantor Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to गॅरेंटर नाव 1.
+        /// </summary>
+        internal static string Guarantor_Name_1 {
+            get {
+                return ResourceManager.GetString("Guarantor Name 1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to गॅरेंटर नाव 2.
+        /// </summary>
+        internal static string Guarantor_Name_2 {
+            get {
+                return ResourceManager.GetString("Guarantor Name 2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to हप्त्याची रक्कम.
+        /// </summary>
+        internal static string Installment_Amount {
+            get {
+                return ResourceManager.GetString("Installment Amount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to कर्ज पूर्ण होण्याची तारीख.
+        /// </summary>
+        internal static string Loan_Completion_Date {
+            get {
+                return ResourceManager.GetString("Loan Completion Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to कर्ज घेतल्याची तारीख.
+        /// </summary>
+        internal static string Loan_Taken_Date {
+            get {
+                return ResourceManager.GetString("Loan Taken Date", resourceCulture);
             }
         }
         
@@ -102,6 +219,42 @@ namespace TirupatiFinance.Resource {
         internal static string Reports {
             get {
                 return ResourceManager.GetString("Reports", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to रीसेट करा.
+        /// </summary>
+        internal static string Reset {
+            get {
+                return ResourceManager.GetString("Reset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to जतन करा.
+        /// </summary>
+        internal static string Save {
+            get {
+                return ResourceManager.GetString("Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to एकूण कालावधी.
+        /// </summary>
+        internal static string Total_Duration {
+            get {
+                return ResourceManager.GetString("Total Duration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to एकूण कर्जाची रक्कम.
+        /// </summary>
+        internal static string Total_Loan_Amount {
+            get {
+                return ResourceManager.GetString("Total Loan Amount", resourceCulture);
             }
         }
     }

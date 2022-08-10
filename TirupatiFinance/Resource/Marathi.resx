@@ -120,19 +120,67 @@
   <data name="Address" xml:space="preserve">
     <value>पत्ता</value>
   </data>
+  <data name="Close" xml:space="preserve">
+    <value>बाहेर जा</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>संपर्क</value>
+  </data>
+  <data name="Contact 1" xml:space="preserve">
+    <value>संपर्क 1</value>
+  </data>
+  <data name="Contact 2" xml:space="preserve">
+    <value>संपर्क 2</value>
+  </data>
   <data name="Customer" xml:space="preserve">
     <value>सभासद</value>
   </data>
   <data name="Customer Information" xml:space="preserve">
     <value>सभासद माहिती</value>
   </data>
+  <data name="Customer Mobile" xml:space="preserve">
+    <value>सभासद क्रमांक</value>
+  </data>
+  <data name="Customer Name" xml:space="preserve">
+    <value>सभासद नाव</value>
+  </data>
   <data name="Daily Collection" xml:space="preserve">
     <value>दैनिक संग्रह</value>
+  </data>
+  <data name="Guarantor Information" xml:space="preserve">
+    <value>गॅरेंटर माहिती</value>
+  </data>
+  <data name="Guarantor Name 1" xml:space="preserve">
+    <value>गॅरेंटर नाव 1</value>
+  </data>
+  <data name="Guarantor Name 2" xml:space="preserve">
+    <value>गॅरेंटर नाव 2</value>
+  </data>
+  <data name="Installment Amount" xml:space="preserve">
+    <value>हप्त्याची रक्कम</value>
+  </data>
+  <data name="Loan Completion Date" xml:space="preserve">
+    <value>कर्ज पूर्ण होण्याची तारीख</value>
+  </data>
+  <data name="Loan Taken Date" xml:space="preserve">
+    <value>कर्ज घेतल्याची तारीख</value>
   </data>
   <data name="New Customer" xml:space="preserve">
     <value>नवीन सभासद</value>
   </data>
   <data name="Reports" xml:space="preserve">
     <value>अहवाल</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>रीसेट करा</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>जतन करा</value>
+  </data>
+  <data name="Total Duration" xml:space="preserve">
+    <value>एकूण कालावधी</value>
+  </data>
+  <data name="Total Loan Amount" xml:space="preserve">
+    <value>एकूण कर्जाची रक्कम</value>
   </data>
 </root>
