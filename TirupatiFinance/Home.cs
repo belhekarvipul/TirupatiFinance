@@ -69,6 +69,12 @@ namespace TirupatiFinance
 
         }
 
-       
+        private void backupNowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Utility.GenerateBackup())
+                MessageBox.Show("Backup generated successfully.");
+            else
+                MessageBox.Show("Something went wrong! Try again after sometime or contact your administrator.");
+        }
     }
 }
