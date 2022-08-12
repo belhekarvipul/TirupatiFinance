@@ -64,7 +64,7 @@ namespace TirupatiFinance
             newCustomerToolStripMenuItem.Text = Constants.resourceManager.GetString("New Customer");
             reportsToolStripMenuItem.Text = Constants.resourceManager.GetString("Reports");
             //dailyReportToolStripMenuItem.Text = Constants.resourceManager.GetString("Daily Report");
-            customerInformationToolStripMenuItem.Text = Constants.resourceManager.GetString("Customer Information");
+            manageCustomerToolStripMenuItem.Text = Constants.resourceManager.GetString("Manage Customer");
             dailyCollectionToolStripMenuItem.Text = Constants.resourceManager.GetString("Daily Collection");
 
         }

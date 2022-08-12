@@ -132,9 +132,6 @@
   <data name="Customer" xml:space="preserve">
     <value>Customer</value>
   </data>
-  <data name="Customer Information" xml:space="preserve">
-    <value>Customer Information</value>
-  </data>
   <data name="Customer Mobile" xml:space="preserve">
     <value>Customer Mobile</value>
   </data>
@@ -161,6 +158,9 @@
   </data>
   <data name="Loan Taken Date" xml:space="preserve">
     <value>Loan Taken Date</value>
+  </data>
+  <data name="Manage Customer" xml:space="preserve">
+    <value>Manage Customer</value>
   </data>
   <data name="New Customer" xml:space="preserve">
     <value>New Customer</value>

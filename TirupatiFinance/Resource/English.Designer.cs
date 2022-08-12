@@ -106,15 +106,6 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Customer Information.
-        /// </summary>
-        internal static string Customer_Information {
-            get {
-                return ResourceManager.GetString("Customer Information", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Customer Mobile.
         /// </summary>
         internal static string Customer_Mobile {
@@ -192,6 +183,15 @@ namespace TirupatiFinance.Resource {
         internal static string Loan_Taken_Date {
             get {
                 return ResourceManager.GetString("Loan Taken Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage Customer.
+        /// </summary>
+        internal static string Manage_Customer {
+            get {
+                return ResourceManager.GetString("Manage Customer", resourceCulture);
             }
         }
         

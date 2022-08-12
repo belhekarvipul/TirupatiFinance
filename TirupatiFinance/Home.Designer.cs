@@ -37,21 +37,19 @@
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customerInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dailyCollectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dailyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.backupNowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.welcomeToolStripMenuItem,
@@ -122,17 +120,9 @@
             // 
             // manageCustomerToolStripMenuItem
             // 
-            this.manageCustomerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.customerInformationToolStripMenuItem});
             this.manageCustomerToolStripMenuItem.Name = "manageCustomerToolStripMenuItem";
             this.manageCustomerToolStripMenuItem.Size = new System.Drawing.Size(295, 34);
             this.manageCustomerToolStripMenuItem.Text = "Manage Customers";
-            // 
-            // customerInformationToolStripMenuItem
-            // 
-            this.customerInformationToolStripMenuItem.Name = "customerInformationToolStripMenuItem";
-            this.customerInformationToolStripMenuItem.Size = new System.Drawing.Size(290, 34);
-            this.customerInformationToolStripMenuItem.Text = "Customer Information";
             // 
             // dailyCollectionToolStripMenuItem
             // 
@@ -181,18 +171,18 @@
             this.manageUsersToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.manageUsersToolStripMenuItem.Text = "Manage Users";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
             // backupNowToolStripMenuItem
             // 
             this.backupNowToolStripMenuItem.Name = "backupNowToolStripMenuItem";
             this.backupNowToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.backupNowToolStripMenuItem.Text = "Backup Now";
             this.backupNowToolStripMenuItem.Click += new System.EventHandler(this.backupNowToolStripMenuItem_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Home
             // 
@@ -231,7 +221,6 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageCustomerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageUsersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem customerInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dailyCollectionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backupNowToolStripMenuItem;
     }
