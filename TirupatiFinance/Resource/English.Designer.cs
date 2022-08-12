@@ -61,6 +61,15 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to (Daily/Monthly/Yearly).
+        /// </summary>
+        internal static string _Daily_Monthly_Yearly_ {
+            get {
+                return ResourceManager.GetString("(Daily/Monthly/Yearly)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Address.
         /// </summary>
         internal static string Address {
@@ -106,11 +115,11 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Customer Mobile.
+        ///   Looks up a localized string similar to Customer Information.
         /// </summary>
-        internal static string Customer_Mobile {
+        internal static string Customer_Information {
             get {
-                return ResourceManager.GetString("Customer Mobile", resourceCulture);
+                return ResourceManager.GetString("Customer Information", resourceCulture);
             }
         }
         
@@ -124,11 +133,29 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Customer Number.
+        /// </summary>
+        internal static string Customer_Number {
+            get {
+                return ResourceManager.GetString("Customer Number", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Daily Collection.
         /// </summary>
         internal static string Daily_Collection {
             get {
                 return ResourceManager.GetString("Daily Collection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Daily Report.
+        /// </summary>
+        internal static string Daily_Report {
+            get {
+                return ResourceManager.GetString("Daily Report", resourceCulture);
             }
         }
         
@@ -219,6 +246,15 @@ namespace TirupatiFinance.Resource {
         internal static string Reset {
             get {
                 return ResourceManager.GetString("Reset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Return Type.
+        /// </summary>
+        internal static string Return_Type {
+            get {
+                return ResourceManager.GetString("Return Type", resourceCulture);
             }
         }
         

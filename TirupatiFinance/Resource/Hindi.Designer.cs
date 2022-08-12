@@ -61,6 +61,15 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to (दैनिक/मासिक/वार्षिक).
+        /// </summary>
+        internal static string _Daily_Monthly_Yearly_ {
+            get {
+                return ResourceManager.GetString("(Daily/Monthly/Yearly)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to पत्ता.
         /// </summary>
         internal static string Address {
@@ -88,7 +97,7 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to संपर्क 1.
+        ///   Looks up a localized string similar to संपर्क १.
         /// </summary>
         internal static string Contact_1 {
             get {
@@ -115,11 +124,11 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to सभासद क्रमांक.
+        ///   Looks up a localized string similar to सभासद माहिती.
         /// </summary>
-        internal static string Customer_Mobile {
+        internal static string Customer_Information {
             get {
-                return ResourceManager.GetString("Customer Mobile", resourceCulture);
+                return ResourceManager.GetString("Customer Information", resourceCulture);
             }
         }
         
@@ -133,6 +142,15 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to सभासद क्रमांक.
+        /// </summary>
+        internal static string Customer_Number {
+            get {
+                return ResourceManager.GetString("Customer Number", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to दैनिक संग्रह.
         /// </summary>
         internal static string Daily_Collection {
@@ -142,7 +160,16 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to गॅरेंटर माहिती.
+        ///   Looks up a localized string similar to दैनिक अहवाल.
+        /// </summary>
+        internal static string Daily_Report {
+            get {
+                return ResourceManager.GetString("Daily Report", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to जामीनदार माहिती.
         /// </summary>
         internal static string Guarantor_Information {
             get {
@@ -151,7 +178,7 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to गॅरेंटर नाव 1.
+        ///   Looks up a localized string similar to १) जामीनदार नाव.
         /// </summary>
         internal static string Guarantor_Name_1 {
             get {
@@ -160,7 +187,7 @@ namespace TirupatiFinance.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to गॅरेंटर नाव 2.
+        ///   Looks up a localized string similar to 2) जामीनदार नाव.
         /// </summary>
         internal static string Guarantor_Name_2 {
             get {
@@ -228,6 +255,15 @@ namespace TirupatiFinance.Resource {
         internal static string Reset {
             get {
                 return ResourceManager.GetString("Reset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to परतीचा प्रकार.
+        /// </summary>
+        internal static string Return_Type {
+            get {
+                return ResourceManager.GetString("Return Type", resourceCulture);
             }
         }
         

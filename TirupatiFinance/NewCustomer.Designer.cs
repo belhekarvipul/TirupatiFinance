@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblDailyMonthlyYearly = new System.Windows.Forms.Label();
             this.txtLoanCompletionDate = new System.Windows.Forms.DateTimePicker();
             this.txtLoanTakenDate = new System.Windows.Forms.DateTimePicker();
             this.ddlReturnType = new System.Windows.Forms.ComboBox();
@@ -82,7 +82,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblDailyMonthlyYearly);
             this.panel1.Controls.Add(this.txtLoanCompletionDate);
             this.panel1.Controls.Add(this.txtLoanTakenDate);
             this.panel1.Controls.Add(this.ddlReturnType);
@@ -111,15 +111,15 @@
             this.panel1.Size = new System.Drawing.Size(1076, 294);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // lblDailyMonthlyYearly
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(666, 205);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 22);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "(Day/Month/Year)";
+            this.lblDailyMonthlyYearly.AutoSize = true;
+            this.lblDailyMonthlyYearly.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDailyMonthlyYearly.Location = new System.Drawing.Point(675, 205);
+            this.lblDailyMonthlyYearly.Name = "lblDailyMonthlyYearly";
+            this.lblDailyMonthlyYearly.Size = new System.Drawing.Size(124, 22);
+            this.lblDailyMonthlyYearly.TabIndex = 6;
+            this.lblDailyMonthlyYearly.Text = "(Day/Month/Year)";
             // 
             // txtLoanCompletionDate
             // 
@@ -614,6 +614,6 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblDailyMonthlyYearly;
     }
 }

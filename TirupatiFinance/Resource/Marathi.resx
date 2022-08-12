@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="(Daily/Monthly/Yearly)" xml:space="preserve">
+    <value>(दैनिक/मासिक/वार्षिक)</value>
+  </data>
   <data name="Address" xml:space="preserve">
     <value>पत्ता</value>
   </data>
@@ -127,7 +130,7 @@
     <value>संपर्क</value>
   </data>
   <data name="Contact 1" xml:space="preserve">
-    <value>संपर्क 1</value>
+    <value>संपर्क १</value>
   </data>
   <data name="Contact 2" xml:space="preserve">
     <value>संपर्क 2</value>
@@ -135,23 +138,29 @@
   <data name="Customer" xml:space="preserve">
     <value>सभासद</value>
   </data>
-  <data name="Customer Mobile" xml:space="preserve">
-    <value>सभासद क्रमांक</value>
+  <data name="Customer Information" xml:space="preserve">
+    <value>सभासद माहिती</value>
   </data>
   <data name="Customer Name" xml:space="preserve">
     <value>सभासद नाव</value>
   </data>
+  <data name="Customer Number" xml:space="preserve">
+    <value>सभासद क्रमांक</value>
+  </data>
   <data name="Daily Collection" xml:space="preserve">
     <value>दैनिक संग्रह</value>
   </data>
+  <data name="Daily Report" xml:space="preserve">
+    <value>दैनिक अहवाल</value>
+  </data>
   <data name="Guarantor Information" xml:space="preserve">
-    <value>गॅरेंटर माहिती</value>
+    <value>जामीनदार माहिती</value>
   </data>
   <data name="Guarantor Name 1" xml:space="preserve">
-    <value>गॅरेंटर नाव 1</value>
+    <value>१) जामीनदार नाव</value>
   </data>
   <data name="Guarantor Name 2" xml:space="preserve">
-    <value>गॅरेंटर नाव 2</value>
+    <value>2) जामीनदार नाव</value>
   </data>
   <data name="Installment Amount" xml:space="preserve">
     <value>हप्त्याची रक्कम</value>
@@ -173,6 +182,9 @@
   </data>
   <data name="Reset" xml:space="preserve">
     <value>रीसेट करा</value>
+  </data>
+  <data name="Return Type" xml:space="preserve">
+    <value>परतीचा प्रकार</value>
   </data>
   <data name="Save" xml:space="preserve">
     <value>जतन करा</value>

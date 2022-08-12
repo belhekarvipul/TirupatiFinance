@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="(Daily/Monthly/Yearly)" xml:space="preserve">
+    <value>(Daily/Monthly/Yearly)</value>
+  </data>
   <data name="Address" xml:space="preserve">
     <value>Address</value>
   </data>
@@ -132,14 +135,20 @@
   <data name="Customer" xml:space="preserve">
     <value>Customer</value>
   </data>
-  <data name="Customer Mobile" xml:space="preserve">
-    <value>Customer Mobile</value>
+  <data name="Customer Information" xml:space="preserve">
+    <value>Customer Information</value>
   </data>
   <data name="Customer Name" xml:space="preserve">
     <value>Customer Name</value>
   </data>
+  <data name="Customer Number" xml:space="preserve">
+    <value>Customer Number</value>
+  </data>
   <data name="Daily Collection" xml:space="preserve">
     <value>Daily Collection</value>
+  </data>
+  <data name="Daily Report" xml:space="preserve">
+    <value>Daily Report</value>
   </data>
   <data name="Guarantor Information" xml:space="preserve">
     <value>Guarantor Information</value>
@@ -170,6 +179,9 @@
   </data>
   <data name="Reset" xml:space="preserve">
     <value>Reset</value>
+  </data>
+  <data name="Return Type" xml:space="preserve">
+    <value>Return Type</value>
   </data>
   <data name="Save" xml:space="preserve">
     <value>Save</value>

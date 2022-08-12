@@ -33,7 +33,7 @@ namespace TirupatiFinance
         {
             NewCustomer newCustomer = new NewCustomer();
             newCustomer.Text = Constants.ApplicationName + " : New Customer";
-            newCustomer.ShowDialog();            
+            newCustomer.ShowDialog();
         }
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -55,7 +55,9 @@ namespace TirupatiFinance
 
         private void addNewUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This functionality is not yet implemented.");
+            NewUser newUser = new NewUser();
+            newUser.Text = Constants.ApplicationName + " : New User";
+            newUser.ShowDialog();
         }
 
         private void LocalizeForm()
@@ -63,10 +65,9 @@ namespace TirupatiFinance
             customerToolStripMenuItem.Text = Constants.resourceManager.GetString("Customer");
             newCustomerToolStripMenuItem.Text = Constants.resourceManager.GetString("New Customer");
             reportsToolStripMenuItem.Text = Constants.resourceManager.GetString("Reports");
-            //dailyReportToolStripMenuItem.Text = Constants.resourceManager.GetString("Daily Report");
+            dailyReportToolStripMenuItem.Text = Constants.resourceManager.GetString("Daily Report");
             manageCustomerToolStripMenuItem.Text = Constants.resourceManager.GetString("Manage Customer");
             dailyCollectionToolStripMenuItem.Text = Constants.resourceManager.GetString("Daily Collection");
-
         }
 
         private void backupNowToolStripMenuItem_Click(object sender, EventArgs e)

@@ -17,7 +17,32 @@ namespace TirupatiFinance
         private void LocalizeForm()
         {
             lblCustomerInformation.Text = Constants.resourceManager.GetString("Customer Information");
+            lblCustomerName.Text = Constants.resourceManager.GetString("Customer Name");
+            lblCustomerNumber.Text = Constants.resourceManager.GetString("Customer Number");
             lblAddress.Text = Constants.resourceManager.GetString("Address");
+            lblContact1.Text = Constants.resourceManager.GetString("Contact 1");
+            lblContact2.Text = Constants.resourceManager.GetString("Contact 2");
+            lblReturnType.Text = Constants.resourceManager.GetString("Return Type");
+            lblTotalLoanAmount.Text = Constants.resourceManager.GetString("Total Loan Amount");
+            lblInstallmentAmount.Text = Constants.resourceManager.GetString("Installment Amount");
+            lblLoanTakenDate.Text = Constants.resourceManager.GetString("Loan Taken Date");
+            lblLoanCompletionDate.Text = Constants.resourceManager.GetString("Loan Completion Date");
+            lblTotalDuration.Text = Constants.resourceManager.GetString("Total Duration");
+            lblDailyMonthlyYearly.Text = Constants.resourceManager.GetString("(Daily/Monthly/Yearly)");
+
+            lblGuarantorInformation.Text = Constants.resourceManager.GetString("Guarantor Information");
+            
+            lblGuarantorName1.Text = Constants.resourceManager.GetString("Guarantor Name 1");
+            lblGuarantorAddress1.Text = Constants.resourceManager.GetString("Address");
+            lblGuarantorContact1.Text = Constants.resourceManager.GetString("Contact");
+
+            lblGuarantorName2.Text = Constants.resourceManager.GetString("Guarantor Name 2");
+            lblGuarantorAddress2.Text = Constants.resourceManager.GetString("Address");
+            lblGuarantorContact2.Text = Constants.resourceManager.GetString("Contact");
+
+            btnReset.Text = Constants.resourceManager.GetString("Reset");
+            btnSave.Text = Constants.resourceManager.GetString("Save");
+            btnClose.Text = Constants.resourceManager.GetString("Close");
         }
 
         private void BindReturnType()
