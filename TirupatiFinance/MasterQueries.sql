@@ -43,3 +43,13 @@ CREATE TABLE [dbo].[Users](
 	[Status] [BIT] NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
+
+SET IDENTITY_INSERT [dbo].[Users] ON 
+GO
+	INSERT INTO [dbo].[Users] ([Id], [UserId], [UserName], [Address], [Contact], [Language], [Role], [Password], [Status])
+	VALUES(1,'Admin','Admin','','','English','MasterAdmin','EDCC5C8639A82360F1BB692EFB855B208457FC496ECCA20F36AA68136F509332',1)
+GO
+SET IDENTITY_INSERT [dbo].[Users] OFF
+GO
+
+
