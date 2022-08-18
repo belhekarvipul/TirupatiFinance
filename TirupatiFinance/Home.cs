@@ -77,5 +77,12 @@ namespace TirupatiFinance
             else
                 MessageBox.Show("Something went wrong! Try again after sometime or contact your administrator.");
         }
+
+        private void manageUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManageUser manageUser = new ManageUser();
+            manageUser.Text = Constants.ApplicationName + " : Manage User";
+            manageUser.ShowDialog();
+        }
     }
 }

@@ -105,8 +105,8 @@ namespace TirupatiFinance
                 customer.TotalLoanAmount = Convert.ToInt32(txtTotalLoanAmount.Text);
                 customer.InstallmentAmount = Convert.ToInt32(txtInstallmentAmount.Text);
                 customer.TotalDuration = Convert.ToInt32(txtTotalDuration.Text);
-                customer.LoanTakenDate = Convert.ToDateTime(txtLoanTakenDate.Text);
-                customer.LoanCompletionDate = Convert.ToDateTime(txtLoanCompletionDate.Text);
+                customer.LoanTakenDate = Convert.ToDateTime(txtLoanTakenDate.Value);
+                customer.LoanCompletionDate = Convert.ToDateTime(txtLoanCompletionDate.Value);
                 customer.GuarantorName1 = txtGuarantorName1.Text;
                 customer.GuarantorAddress1 = txtGuarantorAddress1.Text;
                 customer.GuarantorContact1 = txtGuarantorContact1.Text;

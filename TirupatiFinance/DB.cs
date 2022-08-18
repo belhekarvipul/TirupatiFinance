@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Data;
 using TirupatiFinance.Models;
 
 namespace TirupatiFinance
 {
     public class DB
     {
+        #region CUSTOMER
         public int AddCustomer(Customer customer)
         {
             try
@@ -55,7 +57,7 @@ namespace TirupatiFinance
                              + ",GETDATE(),GETDATE());"
                              + "SELECT SCOPE_IDENTITY();";
 
-                var result = DbHelper.ExecuteSQL(query);
+                var result = DbHelper.ExecuteInsert(query);
 
                 if (result != null)
                     return Convert.ToInt32(result);
@@ -63,11 +65,13 @@ namespace TirupatiFinance
             }
             catch (Exception ex)
             {
-                Utility.log.Error("Error Message : " + ex.Message + Environment.NewLine + "Stace Trace : " + ex.StackTrace);
+                Utility.LogError(ex);
                 return 0;
             }
-        }
+        } 
+        #endregion
 
+        #region USER
         public int AddUser(User user)
         {
             try
@@ -91,7 +95,7 @@ namespace TirupatiFinance
                                + "," + (user.Status ? 1 : 0) + ");"
                              + "SELECT SCOPE_IDENTITY();";
 
-                var result = DbHelper.ExecuteSQL(query);
+                var result = DbHelper.ExecuteInsert(query);
 
                 if (result != null)
                     return Convert.ToInt32(result);
@@ -99,9 +103,54 @@ namespace TirupatiFinance
             }
             catch (Exception ex)
             {
-                Utility.log.Error("Error Message : " + ex.Message + Environment.NewLine + "Stace Trace : " + ex.StackTrace);
+                Utility.LogError(ex);
                 return 0;
             }
         }
+
+        public int UpdateUser(User user)
+        {
+            try
+            {
+                string query = "UPDATE [dbo].[Users] SET"
+                               + " [UserName] = '" + user.UserName + "'"
+                               + ",[Address] = '" + user.Address + "'"
+                               + ",[Contact] = '" + user.Contact + "'"
+                               + ",[Language] = '" + user.Language + "'"
+                               + ",[Role] = '" + user.Role + "'"
+                               + ",[Status] = " + (user.Status ? 1 : 0)
+                               + " WHERE [Id] = " + user.Id;
+
+                var result = DbHelper.ExecuteUpdate(query);
+
+                if (result != null)
+                    return Convert.ToInt32(result);
+                return 0;
+            }
+            catch (Exception ex)
+            {
+                Utility.LogError(ex);
+                return 0;
+            }
+        }
+
+        public DataTable SearchUser(string UserId, string UserName)
+        {
+            try
+            {
+                string query = "SELECT * FROM USERS WHERE  UserId = '" + UserId + "' OR UserName = '" + UserName + "'";
+                var result = DbHelper.ExecuteSelect(query);
+                if (result != null)
+                    return result;
+                else
+                    return null;
+            }
+            catch (Exception ex)
+            {
+                Utility.LogError(ex);
+                return null;
+            }
+        } 
+        #endregion
     }
 }

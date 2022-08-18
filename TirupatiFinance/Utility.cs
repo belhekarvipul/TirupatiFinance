@@ -102,9 +102,13 @@ namespace TirupatiFinance
             }
             catch (Exception ex)
             {
-                log.Error("Error Message : " + ex.Message + Environment.NewLine + "Stace Trace : " + ex.StackTrace);
+                Utility.LogError(ex);
                 return false;
             }
+        }
+
+        public static void LogError(Exception ex) {
+            log.Error("Error Message : " + ex.Message + Environment.NewLine + "Stace Trace : " + ex.StackTrace);
         }
     }
 }
