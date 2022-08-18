@@ -38,7 +38,7 @@ CREATE TABLE [dbo].[Users](
 	[Address] [NVARCHAR](MAX) NULL,
 	[Contact] [NVARCHAR](50) NULL,
 	[Language] [NVARCHAR](50) NULL,
-	[Role] [INT] NULL,
+	[Role] [NVARCHAR](50) NULL,
 	[Password] [NVARCHAR](1000) NULL,
 	[Status] [BIT] NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]

@@ -5,7 +5,8 @@ namespace TirupatiFinance
 {
     public class DB
     {
-        public int AddCustomer(Customer customer) {
+        public int AddCustomer(Customer customer)
+        {
             try
             {
                 string query = "INSERT INTO[dbo].[Customers] ("
@@ -52,6 +53,42 @@ namespace TirupatiFinance
                              + ",1"
                              + ",1"
                              + ",GETDATE(),GETDATE());"
+                             + "SELECT SCOPE_IDENTITY();";
+
+                var result = DbHelper.ExecuteSQL(query);
+
+                if (result != null)
+                    return Convert.ToInt32(result);
+                return 0;
+            }
+            catch (Exception ex)
+            {
+                Utility.log.Error("Error Message : " + ex.Message + Environment.NewLine + "Stace Trace : " + ex.StackTrace);
+                return 0;
+            }
+        }
+
+        public int AddUser(User user)
+        {
+            try
+            {
+                string query = "INSERT INTO [dbo].[Users]("
+                               + " [UserId]"
+                               + ",[UserName]"
+                               + ",[Address]"
+                               + ",[Contact]"
+                               + ",[Language]"
+                               + ",[Role]"
+                               + ",[Password]"
+                               + ",[Status]) VALUES ("
+                               + " '" + user.UserId + "'"
+                               + ",'" + user.UserName + "'"
+                               + ",'" + user.Address + "'"
+                               + ",'" + user.Contact + "'"
+                               + ",'" + user.Language + "'"
+                               + ",'" + user.Role + "'"
+                               + ",'" + Constants.DefaultPassword + "'"
+                               + "," + (user.Status ? 1 : 0) + ");"
                              + "SELECT SCOPE_IDENTITY();";
 
                 var result = DbHelper.ExecuteSQL(query);

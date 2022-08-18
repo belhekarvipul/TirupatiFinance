@@ -197,13 +197,13 @@
             this.radioActive.Name = "radioActive";
             this.radioActive.Size = new System.Drawing.Size(77, 24);
             this.radioActive.TabIndex = 16;
-            this.radioActive.TabStop = true;
             this.radioActive.Text = "Active";
             this.radioActive.UseVisualStyleBackColor = true;
             // 
             // radioInactive
             // 
             this.radioInactive.AutoSize = true;
+            this.radioInactive.Checked = true;
             this.radioInactive.Location = new System.Drawing.Point(831, 320);
             this.radioInactive.Name = "radioInactive";
             this.radioInactive.Size = new System.Drawing.Size(89, 24);

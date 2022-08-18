@@ -118,7 +118,10 @@ namespace TirupatiFinance
                 int CustomerId = db.AddCustomer(customer);
 
                 if (CustomerId > 0)
+                {
                     MessageBox.Show("A new customer with Id - " + CustomerId + " has been added to the system.");
+                    ResetControls();
+                }
                 else
                     MessageBox.Show("Something went wrong! Try again after sometime or contact your administrator.");
             }

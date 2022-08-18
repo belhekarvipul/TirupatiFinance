@@ -11,7 +11,9 @@ namespace TirupatiFinance
 
         public static string ApplicationName = ConfigurationManager.AppSettings["ApplicationName"].ToString();
         public static string DatabaseName = ConfigurationManager.AppSettings["DatabaseName"].ToString();
-        
+
+        public static string DefaultPassword = Utility.Encrypt("123", ApplicationName);
+
 
         public static ResourceManager resourceManager = new ResourceManager("TirupatiFinance.Resource.English", typeof(Login).Assembly);
         public static CultureInfo culture = CultureInfo.CreateSpecificCulture("en-US");
@@ -29,6 +31,13 @@ namespace TirupatiFinance
             Weekly,
             Monyhly,
             Yearly
+        };
+
+        public enum Role
+        {
+            MasterAdmin = 1,
+            Admin = 2,
+            NonAdmin = 3
         };
     }
 }
