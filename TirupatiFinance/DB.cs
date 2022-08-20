@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Data;
 using TirupatiFinance.Models;
 
@@ -68,10 +69,31 @@ namespace TirupatiFinance
                 Utility.LogError(ex);
                 return 0;
             }
-        } 
+        }
         #endregion
 
         #region USER
+
+        public DataTable Userlogin(string username, string password)
+        {
+            string ApplicationName = ConfigurationManager.AppSettings["ApplicationName"].ToString();
+            string DecriptPassword = Utility.Encrypt(password, ApplicationName);
+
+            try
+            {
+                string query = "SELECT * FROM USERS WHERE  UserName = '" + username + "' AND Password = '" + DecriptPassword + "'";
+                var result = DbHelper.ExecuteSelect(query);
+                if (result != null)
+                    return result;
+                else
+                    return null;
+            }
+            catch (Exception ex)
+            {
+                Utility.LogError(ex);
+                return null;
+            }
+        }
         public int AddUser(User user)
         {
             try
