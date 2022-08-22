@@ -173,7 +173,30 @@ namespace TirupatiFinance
                 Utility.LogError(ex);
                 return null;
             }
-        } 
+        }
         #endregion
+
+        public DataTable GetDailyCollectionData(string returnType) {
+            try
+            {
+                string query = "SELECT CustomerNumber" +
+                    ", CustomerName" +
+                    ", TotalLoanAmount" +
+                    ", RemainingAmount" +
+                    ", InstallmentAmount " +
+                    "FROM Customers WHERE ReturnType = '" + returnType + "' AND CreatedBy = " + Constants.loggedInUser.Id;
+
+                var result = DbHelper.ExecuteSelect(query);
+                if (result != null)
+                    return result;
+                else
+                    return null;
+            }
+            catch (Exception ex)
+            {
+                Utility.LogError(ex);
+                return null;
+            }
+        }
     }
 }

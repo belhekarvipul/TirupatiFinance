@@ -84,5 +84,12 @@ namespace TirupatiFinance
             manageUser.Text = Constants.ApplicationName + " : Manage User";
             manageUser.ShowDialog();
         }
+
+        private void dailyCollectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DailyCollection dailyCollection = new DailyCollection();
+            dailyCollection.Text = Constants.ApplicationName + " : Daily Collection";
+            dailyCollection.ShowDialog();
+        }
     }
 }

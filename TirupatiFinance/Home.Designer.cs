@@ -130,6 +130,7 @@
             this.dailyCollectionToolStripMenuItem.Name = "dailyCollectionToolStripMenuItem";
             this.dailyCollectionToolStripMenuItem.Size = new System.Drawing.Size(295, 34);
             this.dailyCollectionToolStripMenuItem.Text = "Daily Collection ";
+            this.dailyCollectionToolStripMenuItem.Click += new System.EventHandler(this.dailyCollectionToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
