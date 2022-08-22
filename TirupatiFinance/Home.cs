@@ -9,9 +9,9 @@ namespace TirupatiFinance
         {
             InitializeComponent();
             Text = Constants.ApplicationName + " : Home";
-            welcomeToolStripMenuItem.Text = "Welcome : " + Constants.UserName.ToUpper();
+            welcomeToolStripMenuItem.Text = "Welcome : " + Constants.loggedInUser.UserName.ToUpper();
 
-            if (Constants.isSystemUser)
+            if (Constants.loggedInUser.Role == Constants.Role.Admin.ToString())
             {
                 adminToolStripMenuItem.Visible = true;
             }

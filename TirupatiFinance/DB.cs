@@ -53,8 +53,8 @@ namespace TirupatiFinance
                              + ",'" + customer.GuarantorAddress2 + "'"
                              + ",'" + customer.GuarantorContact2 + "'"
                              + ",1"
-                             + ",1"
-                             + ",1"
+                             + "," + Constants.loggedInUser.Id
+                             + "," + Constants.loggedInUser.Id
                              + ",GETDATE(),GETDATE());"
                              + "SELECT SCOPE_IDENTITY();";
 
@@ -74,15 +74,16 @@ namespace TirupatiFinance
 
         #region USER
 
-        public DataTable Userlogin(string username, string password)
+        public DataTable Userlogin(string userId, string password)
         {
             string ApplicationName = ConfigurationManager.AppSettings["ApplicationName"].ToString();
-            string DecriptPassword = Utility.Encrypt(password, ApplicationName);
+            string encryptedPassword = Utility.Encrypt(password, ApplicationName);
 
             try
             {
-                string query = "SELECT * FROM USERS WHERE  UserName = '" + username + "' AND Password = '" + DecriptPassword + "'";
+                string query = "SELECT TOP 1 * FROM USERS WHERE UserId = '" + userId + "' AND Password = '" + encryptedPassword + "' AND Status = 1";
                 var result = DbHelper.ExecuteSelect(query);
+
                 if (result != null)
                     return result;
                 else

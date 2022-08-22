@@ -6,8 +6,9 @@ namespace TirupatiFinance
 {
     public static class Constants
     {
-        public static string UserName = "";
-        public static bool isSystemUser = false;
+        #region LoginUser
+        public static Models.User loggedInUser = null;
+        #endregion
 
         public static string ApplicationName = ConfigurationManager.AppSettings["ApplicationName"].ToString();
         public static string DatabaseName = ConfigurationManager.AppSettings["DatabaseName"].ToString();

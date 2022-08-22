@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using TirupatiFinance.Models;
 
 namespace TirupatiFinance
 {
@@ -23,35 +24,55 @@ namespace TirupatiFinance
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUserName.Text != string.Empty && txtPassword.Text != string.Empty )
+            if (txtUserName.Text != string.Empty || txtPassword.Text != string.Empty)
             {
-                //MessageBox.Show("Your encrypted password is : " + Utility.Encrypt(txtUserName.Text, Constants.ApplicationName));
-                DataTable userDetails = db.Userlogin(txtUserName.Text, txtPassword.Text);
-                Constants.UserName = txtUserName.Text;
-                foreach (DataRow row in userDetails.Rows)
+                DataTable dtUser = db.Userlogin(txtUserName.Text, txtPassword.Text);
+
+                if (dtUser != null && dtUser.Rows.Count > 0)
                 {
-                    string UserName = row["UserName"].ToString();
-                    string Language = row["Language"].ToString();
+                    User loggedInUser = new User();
 
-                       if (UserName == "Admin")
-                        Constants.isSystemUser = true;
-                       if (Language == "Marathi")
-                        Utility.SetLanguage(Constants.Language.Marathi);
-                       if(Language == "English")
-                        Utility.SetLanguage(Constants.Language.English);
-                       if (Language == "Hindi")
-                        Utility.SetLanguage(Constants.Language.Hindi);
+                    loggedInUser.Id = Convert.ToInt32(dtUser.Rows[0]["Id"]);
+                    loggedInUser.UserId = dtUser.Rows[0]["UserId"].ToString();
+                    loggedInUser.UserName = dtUser.Rows[0]["UserName"].ToString();
+                    loggedInUser.Address = dtUser.Rows[0]["Address"].ToString();
+                    loggedInUser.Contact = dtUser.Rows[0]["Contact"].ToString();
+                    loggedInUser.Language = dtUser.Rows[0]["Language"].ToString();
+                    loggedInUser.Password = dtUser.Rows[0]["Password"].ToString();
+                    loggedInUser.Role = dtUser.Rows[0]["Role"].ToString();
+                    loggedInUser.Status = true;
+
+                    Constants.loggedInUser = loggedInUser;
+
+                    switch (loggedInUser.Language)
+                    {
+                        case "Marathi":
+                            Utility.SetLanguage(Constants.Language.Marathi);
+                            break;
+                        case "English":
+                            Utility.SetLanguage(Constants.Language.English);
+                            break;
+                        case "Hindi":
+                            Utility.SetLanguage(Constants.Language.Hindi);
+                            break;
+                        default:
+                            Utility.SetLanguage(Constants.Language.English);
+                            break;
+                    }
+
+                    this.Hide();
+                    Home home = new Home();
+                    home.Show();
                 }
-
-            this.Hide();
-
-
-            Home home = new Home();
-            home.Show();
-
+                else
+                {
+                    lblErrorMessage.Text = "Please enter correct details.";
+                    lblErrorMessage.Visible = true;
+                }
             }
             else
             {
+                lblErrorMessage.Text = "Please enter UserId and Password.";
                 lblErrorMessage.Visible = true;
             }
         }
