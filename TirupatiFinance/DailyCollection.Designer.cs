@@ -52,7 +52,7 @@
             this.tabPanelDailyCollection.Location = new System.Drawing.Point(0, 0);
             this.tabPanelDailyCollection.Name = "tabPanelDailyCollection";
             this.tabPanelDailyCollection.SelectedIndex = 0;
-            this.tabPanelDailyCollection.Size = new System.Drawing.Size(1500, 619);
+            this.tabPanelDailyCollection.Size = new System.Drawing.Size(1305, 619);
             this.tabPanelDailyCollection.TabIndex = 0;
             this.tabPanelDailyCollection.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabPanelDailyCollection_Selected);
             // 
@@ -85,7 +85,7 @@
             this.tabWeekly.Location = new System.Drawing.Point(4, 29);
             this.tabWeekly.Name = "tabWeekly";
             this.tabWeekly.Padding = new System.Windows.Forms.Padding(3);
-            this.tabWeekly.Size = new System.Drawing.Size(1492, 586);
+            this.tabWeekly.Size = new System.Drawing.Size(1297, 586);
             this.tabWeekly.TabIndex = 1;
             this.tabWeekly.Text = "Weekly";
             this.tabWeekly.UseVisualStyleBackColor = true;
@@ -94,12 +94,19 @@
             // 
             this.dataGridWeekly.AllowUserToAddRows = false;
             this.dataGridWeekly.AllowUserToDeleteRows = false;
+            this.dataGridWeekly.AllowUserToResizeRows = false;
+            this.dataGridWeekly.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridWeekly.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridWeekly.Location = new System.Drawing.Point(8, 8);
+            this.dataGridWeekly.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridWeekly.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
+            this.dataGridWeekly.Location = new System.Drawing.Point(3, 3);
             this.dataGridWeekly.Name = "dataGridWeekly";
             this.dataGridWeekly.RowHeadersWidth = 62;
             this.dataGridWeekly.RowTemplate.Height = 28;
-            this.dataGridWeekly.Size = new System.Drawing.Size(1458, 518);
+            this.dataGridWeekly.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridWeekly.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridWeekly.ShowEditingIcon = false;
+            this.dataGridWeekly.Size = new System.Drawing.Size(1291, 518);
             this.dataGridWeekly.TabIndex = 0;
             // 
             // tabMonthly
